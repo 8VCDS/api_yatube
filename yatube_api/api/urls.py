@@ -12,7 +12,10 @@ urlpatterns = [
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
 
     # Комментарии
-    path('posts/<int:post_id>/comments/', CommentViewSet.as_view({'get': 'list', 'post': 'create'})),
+    path('posts/<int:post_id>/comments/', CommentViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
     path('posts/<int:post_id>/comments/<int:pk>/', CommentViewSet.as_view({
         'get': 'retrieve',
         'put': 'update',
