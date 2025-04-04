@@ -24,7 +24,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'posts.apps.PostsConfig',
     'rest_framework',
     'rest_framework.authtoken',
     'api',
@@ -109,7 +108,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-# аутнтификация по токену
+# аутентификация по токену
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
